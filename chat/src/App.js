@@ -4,12 +4,12 @@ import "./App.css";
 class App extends Component {
   render() {
     return (
-      <div id="container">
-        <aside id="sidebar">Users</aside>
-        <section id="main">
-          <section id="messages-list">Messages list</section>
-          <section id="new-message">New message</section>
-        </section>
+      <div class="container">
+        <aside class="sidebar">Users</aside>
+        <div class="main">
+          <div class="messages-list">Messages list</div>
+          <div class="new-message">New Message</div>
+        </div>
       </div>
     );
   }

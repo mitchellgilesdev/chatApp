@@ -2,34 +2,46 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  background-color: #26272A;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
 }
-body {
-    font-family: "Press Start 2P";
-}
-#container {
+.container {
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-template-areas: "sidebar main";
     width: 100vw;
     height: 100vh;
+    
 }
-#main {
+.main {
     grid-area: main;
 }
-#new-message {
+.new-message {
+    display: flex;
+    justify-content: left;
+    font-size: 20px;
+    color: white;
     position: fixed;
     bottom: 0;
-    width: 100%;
     padding: 5px;
     margin-left: 0px;
-    border-top: 1px solid #3f3f3f;
+    border: 3px solid #3f3f3f;
+    border-radius: 10px;
+    background-color: #898A91
 }
-#messages-list {
-    padding: 5px 0 0 5px;
+.messages-list {
+  display: flex;
+  justify-content: center;
+    padding: 20px 0 0 5px;
+
 }
-#sidebar {
+.sidebar {
+    display: flex;
+    justify-content: center;
     grid-area: sidebar;
-    padding: 5px 0 0 5px;
+    padding: 20px 0 0 20Px;
     border-right: 1px solid #3f3f3f;
     height: 100%;
+
 }
