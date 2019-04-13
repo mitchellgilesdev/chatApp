@@ -13,10 +13,7 @@ class App extends Component {
         <MessagesList />
         <AddMessage />
         </section>
-      
-      
       </div>
-      
       );
   }
 }
