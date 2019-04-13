@@ -1,17 +1,23 @@
 import React, { Component } from "react";
 import "./App.css";
+import { Sidebar} from "./containers/Sidebar"
+import { MessagesList} from "./containers/MessagesList"
+import {AddMessage} from "./containers/AddMessage"
 
 class App extends Component {
   render() {
     return (
-      <div class="container">
-        <aside class="sidebar">Users</aside>
-        <div class="main">
-          <div class="messages-list">Messages list</div>
-          <div class="new-message">New Message</div>
-        </div>
+      <div id = "container">
+        <Sidebar />
+        <section id="main">
+        <MessagesList />
+        <AddMessage />
+        </section>
+      
+      
       </div>
-    );
+      
+      );
   }
 }
 
